@@ -80,7 +80,7 @@ const pillars = [
     products: [
       {
         name: "Personal Finance Hub",
-        url: "https://gumroad.com/etomedia",
+        url: "https://zephy4.gumroad.com/l/pbxqg",
         tagline: "A complete financial planning toolkit — budgeting, savings goals, and spending clarity.",
         capability: "Professional financial advisory",
         badge: "Gumroad",
@@ -88,7 +88,7 @@ const pillars = [
       },
       {
         name: "Monthly Budget Tracker",
-        url: "https://gumroad.com/etomedia",
+        url: "https://zephy4.gumroad.com/l/pwsfcu",
         tagline: "Budget discipline and monthly financial clarity without a consultant.",
         capability: "Financial consulting",
         badge: "Gumroad",
@@ -96,7 +96,7 @@ const pillars = [
       },
       {
         name: "Monthly Habit Tracker",
-        url: "https://gumroad.com/etomedia",
+        url: "https://zephy4.gumroad.com/l/sfric",
         tagline: "Build habits, track streaks, and stay accountable — without a life coach.",
         capability: "Life coaching",
         badge: "Gumroad",
@@ -104,7 +104,7 @@ const pillars = [
       },
       {
         name: "Weekly Meal Planner",
-        url: "https://gumroad.com/etomedia",
+        url: "https://zephy4.gumroad.com/l/bnpks",
         tagline: "Nutritional planning and meal structure made simple.",
         capability: "Nutritional planning",
         badge: "Gumroad",
@@ -112,10 +112,10 @@ const pillars = [
       },
       {
         name: "ROI Copilot",
-        url: "https://gumroad.com/etomedia",
+        url: "https://zephy4.gumroad.com",
         tagline: "Management-consultant-level ROI analysis for any role or project.",
         capability: "Management consulting",
-        badge: "Gumroad",
+        badge: "Coming Soon",
         badgeColor: "#7C3AED",
       },
     ],
