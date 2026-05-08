@@ -110,14 +110,6 @@ const pillars = [
         badge: "Gumroad",
         badgeColor: "#7C3AED",
       },
-      {
-        name: "ROI Copilot",
-        url: "https://zephy4.gumroad.com",
-        tagline: "Management-consultant-level ROI analysis for any role or project.",
-        capability: "Management consulting",
-        badge: "Coming Soon",
-        badgeColor: "#7C3AED",
-      },
     ],
   },
 ];

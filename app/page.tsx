@@ -92,12 +92,6 @@ const pillars = [
         detail: "Build momentum, track streaks, and stay accountable — on your own terms.",
         url: "https://zephy4.gumroad.com/l/sfric",
       },
-      {
-        name: "ROI Copilot",
-        tagline: "Management-consultant-level ROI analysis.",
-        detail: "Justify projects, proposals, and decisions with confidence.",
-        url: "https://zephy4.gumroad.com",
-      },
     ],
   },
 ];
