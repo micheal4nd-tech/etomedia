@@ -85,7 +85,7 @@ export default function HomePage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="bg-midnight text-white min-h-screen flex flex-col pt-16 relative overflow-hidden">
+      <section className="bg-midnight text-white min-h-screen flex flex-col pt-20 relative overflow-hidden">
 
         {/* Atmospheric glow orbs */}
         <div aria-hidden className="absolute inset-0 pointer-events-none">

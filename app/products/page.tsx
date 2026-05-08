@@ -118,7 +118,7 @@ export default function ProductsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-midnight text-white pt-32 pb-20">
+      <section className="bg-midnight text-white pt-36 pb-20">
         <div className="max-w-6xl mx-auto px-6">
           <span className="section-label">The Ecosystem</span>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-5 max-w-2xl">

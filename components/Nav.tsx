@@ -26,14 +26,14 @@ export default function Nav() {
           : "bg-midnight"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
+      <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-20">
         <Link href="/" className="flex items-center">
           <Image
             src="/logo.png"
             alt="Etomedia"
-            width={220}
-            height={56}
-            className="h-11 w-auto"
+            width={320}
+            height={80}
+            className="h-16 w-auto"
             priority
           />
         </Link>
