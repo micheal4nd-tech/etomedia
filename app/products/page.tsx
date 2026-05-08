@@ -131,15 +131,15 @@ export default function ProductsPage() {
       </section>
 
       {/* Pillars */}
-      <section className="py-16 bg-warm-white">
+      <section className="py-16" style={{ background: "#0B1120" }}>
         <div className="max-w-6xl mx-auto px-6 flex flex-col gap-16">
           {pillars.map((pillar) => (
             <div key={pillar.id}>
               {/* Pillar header */}
               <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
                 <div>
-                  <h2 className="text-2xl font-bold text-midnight">{pillar.label}</h2>
-                  <p className="text-slate-500 mt-1">{pillar.tagline}</p>
+                  <h2 className="text-2xl font-bold text-white">{pillar.label}</h2>
+                  <p className="mt-1" style={{ color: "#64748B" }}>{pillar.tagline}</p>
                 </div>
                 <span
                   className="text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full self-start md:self-auto"
@@ -156,7 +156,7 @@ export default function ProductsPage() {
                     href={product.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="product-card group"
+                    className="dark-card group flex flex-col p-5"
                   >
                     <div className="flex items-start justify-between mb-3">
                       <span
@@ -165,20 +165,18 @@ export default function ProductsPage() {
                       >
                         {product.badge}
                       </span>
-                      <svg
-                        width="16" height="16"
-                        viewBox="0 0 16 16" fill="none"
-                        className="text-slate-300 group-hover:text-gold transition-colors mt-0.5"
-                      >
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                           className="group-hover:text-gold transition-colors mt-0.5"
+                           style={{ color: "#334155" }}>
                         <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                     </div>
-                    <h3 className="font-bold text-midnight text-base mb-1.5 group-hover:text-gold transition-colors">
+                    <h3 className="font-bold text-base mb-1.5 group-hover:text-gold transition-colors" style={{ color: "white" }}>
                       {product.name}
                     </h3>
-                    <p className="text-slate-500 text-sm leading-relaxed mb-4">{product.tagline}</p>
-                    <div className="pt-4 border-t border-slate-100">
-                      <p className="text-xs text-slate-400">
+                    <p className="text-sm leading-relaxed mb-4 flex-1" style={{ color: "#64748B" }}>{product.tagline}</p>
+                    <div className="pt-4" style={{ borderTop: "1px solid rgba(51,65,85,0.5)" }}>
+                      <p className="text-xs" style={{ color: "#475569" }}>
                         Gives you the capability of a{" "}
                         <span className="font-medium" style={{ color: pillar.accent }}>
                           {product.capability}

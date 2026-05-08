@@ -31,9 +31,9 @@ export default function Nav() {
           <Image
             src="/logo.png"
             alt="Etomedia"
-            width={160}
-            height={40}
-            className="h-8 w-auto"
+            width={220}
+            height={56}
+            className="h-11 w-auto"
             priority
           />
         </Link>

@@ -38,6 +38,21 @@
   }
 }
 
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@keyframes float-orb {
+  0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.07; }
+  50%       { transform: translate(24px, -28px) scale(1.08); opacity: 0.13; }
+}
+
+@keyframes float-orb-alt {
+  0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.05; }
+  50%       { transform: translate(-20px, 24px) scale(1.06); opacity: 0.09; }
+}
+
 @layer components {
   .btn-gold {
     display: inline-flex;
@@ -173,5 +188,62 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
+    display: flex;
+    width: max-content;
+  }
+
+  .liquid-glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(4px);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.12);
+    position: relative;
+    overflow: hidden;
+  }
+  .liquid-glass::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(
+      180deg,
+      rgba(255,255,255,0.3) 0%,
+      rgba(255,255,255,0.08) 40%,
+      rgba(255,255,255,0) 60%,
+      rgba(255,255,255,0.15) 100%
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  .orb-1 { animation: float-orb 9s ease-in-out infinite; }
+  .orb-2 { animation: float-orb-alt 12s ease-in-out infinite 2s; }
+  .orb-3 { animation: float-orb 15s ease-in-out infinite 5s; }
+
+  .dark-card {
+    background: #111827;
+    border: 1px solid rgba(51, 65, 85, 0.6);
+    border-radius: 0.75rem;
+    transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+    text-decoration: none;
+    display: block;
+  }
+  .dark-card:hover {
+    border-color: rgba(212, 175, 55, 0.4);
+    box-shadow: 0 4px 24px rgba(212, 175, 55, 0.08);
+    background: rgba(255, 255, 255, 0.03);
+  }
+
+  .dark-row {
+    transition: background 0.15s;
+  }
+  .dark-row:hover {
+    background: rgba(255, 255, 255, 0.03);
   }
 }
