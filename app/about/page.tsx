@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About — Etomedia",
   description:
-    "The story behind Etomedia — built by Ndifreke Etoedia for the people he has always been one of.",
+    "The story behind Etomedia — built for the people who have always been overlooked.",
 };
 
 const values = [
@@ -72,8 +72,8 @@ export default function AboutPage() {
                   </p>
                   <p className="text-gold text-4xl font-bold text-right mt-1">"</p>
                   <div className="mt-6 pt-6 border-t border-slate-800">
-                    <p className="text-white font-semibold text-sm">Ndifreke Etoedia</p>
-                    <p className="text-slate-500 text-xs mt-0.5">Founder, Etomedia</p>
+                    <p className="text-white font-semibold text-sm">The Founder</p>
+                    <p className="text-slate-500 text-xs mt-0.5">Etomedia</p>
                   </div>
                 </div>
 
@@ -100,7 +100,7 @@ export default function AboutPage() {
               <div className="prose prose-slate max-w-none">
                 <div className="text-slate-700 space-y-6 text-[1.0625rem] leading-[1.8]">
                   <p>
-                    My name is Ndifreke Etoedia. I grew up knowing I was capable of more — but for a long time, the tools to prove it weren&apos;t designed for people like me.
+                    I grew up knowing I was capable of more — but for a long time, the tools to prove it weren&apos;t designed for people like me.
                   </p>
                   <p>
                     I came to the UK from Nigeria and built a career in programme management, working alongside some of the country&apos;s largest organisations — government departments, public services, institutions of real scale. But wherever I went, I kept seeing the same pattern: the knowledge that actually moved people forward, the tools that changed outcomes — they were locked away.
@@ -127,9 +127,9 @@ export default function AboutPage() {
                     This is for the parent who stayed up late writing a story their child will remember. For the professional who&apos;s been sending CVs into silence. For the preacher who prepares every week with nothing but time and faith. For the first-generation entrepreneur who&apos;s been building without a map.
                   </p>
                   <p className="text-midnight font-semibold">
-                    This is Etomedia. Built by me, for the people I&apos;ve always been one of.
+                    This is Etomedia. Built for the people who have always been overlooked.
                   </p>
-                  <p className="text-slate-500 text-sm pt-2">— Ndifreke Etoedia, Founder</p>
+                  <p className="text-slate-500 text-sm pt-2">— The Founder, Etomedia</p>
                 </div>
               </div>
             </div>

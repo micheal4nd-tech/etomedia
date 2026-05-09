@@ -103,7 +103,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-slate-800 mt-14 pt-8 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-slate-600">
           <p>© {new Date().getFullYear()} Etomedia. All rights reserved.</p>
-          <p>Built by Ndifreke Etoedia · etomedia.co.uk</p>
+          <p>etomedia.co.uk</p>
         </div>
       </div>
     </footer>

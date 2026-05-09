@@ -54,7 +54,7 @@ export default function WaitlistForm() {
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            placeholder="Ndifreke"
+            placeholder="Your name"
             className="input-field-dark"
           />
         </div>
