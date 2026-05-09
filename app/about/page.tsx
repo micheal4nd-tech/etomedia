@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About — Etomedia",
   description:
-    "The story behind Etomedia — built by Mike Etoedia for the people who have always been overlooked.",
+    "The story behind Etomedia — for the people who have always been overlooked.",
 };
 
 const values = [
@@ -127,7 +127,7 @@ export default function AboutPage() {
                     This is for the parent who stayed up late writing a story their child will remember. For the professional who&apos;s been sending CVs into silence. For the preacher who prepares every week with nothing but time and faith. For the first-generation entrepreneur who&apos;s been building without a map.
                   </p>
                   <p className="text-midnight font-semibold">
-                    This is Etomedia. Built by Mike Etoedia, for the people he has always been one of.
+                    This is Etomedia. For the people who have always been overlooked.
                   </p>
                   <p className="text-slate-500 text-sm pt-2">— Mike Etoedia, Founder</p>
                 </div>
