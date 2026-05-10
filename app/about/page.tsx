@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About — Etomedia",
   description:
-    "The story behind Etomedia — for the people who have always been overlooked.",
+    "Etomedia builds AI-powered tools that give ordinary people the capabilities that used to belong only to professionals.",
 };
 
 const values = [
@@ -14,8 +14,8 @@ const values = [
     icon: "◆",
   },
   {
-    title: "Built for the Overlooked",
-    desc: "Diaspora communities, first-generation entrepreneurs, working parents, faith leaders. We build for them because we are them.",
+    title: "Designed for Everyone",
+    desc: "Parents, professionals, entrepreneurs, faith leaders. We build tools that remove barriers, not reinforce them.",
     icon: "●",
   },
   {
@@ -24,19 +24,42 @@ const values = [
     icon: "▲",
   },
   {
-    title: "Authentic to the Bone",
-    desc: "No corporate pretending. This brand was built by one person, with a conviction. That vulnerability is a strength.",
+    title: "Intelligent by Design",
+    desc: "Every Etomedia product is built to work at scale — reliably, consistently, and without friction.",
     icon: "✦",
-  },
-  {
-    title: "Build to Scale",
-    desc: "Every product works without you in the room. Good design is intelligent design.",
-    icon: "○",
   },
   {
     title: "Practical Over Theoretical",
     desc: "Useful over flashy. Tools that work in real life, for real people, right now.",
+    icon: "○",
+  },
+  {
+    title: "Always Improving",
+    desc: "We build, listen, and iterate. The product you use today will be better tomorrow.",
     icon: "▪",
+  },
+];
+
+const pillars = [
+  {
+    label: "Children & Family",
+    products: "Lumi Stories, LinguaKids",
+    desc: "Giving every parent the capability of a professional author and language tutor.",
+  },
+  {
+    label: "Career & Professional",
+    products: "SylphCV",
+    desc: "Putting professional-grade career tools directly in the hands of job seekers.",
+  },
+  {
+    label: "Faith & Community",
+    products: "Keruxly",
+    desc: "Equipping every preacher with the research depth of a seasoned theologian.",
+  },
+  {
+    label: "Productivity & Finance",
+    products: "Finance Hub, Budget Tracker, Habit Tracker, Meal Planner",
+    desc: "The structure and discipline of a professional advisor — without the fees.",
   },
 ];
 
@@ -47,38 +70,39 @@ export default function AboutPage() {
       <section className="bg-midnight text-white pt-36 pb-20">
         <div className="max-w-6xl mx-auto px-6">
           <div className="max-w-3xl">
-            <span className="section-label">Our Story</span>
+            <span className="section-label">About Etomedia</span>
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-[1.08]">
-              Built for the people I&apos;ve always been one of.
+              Extraordinary capability.<br />For ordinary people.
             </h1>
             <p className="text-slate-400 text-xl leading-relaxed">
-              Etomedia is a portfolio of AI-powered tools built on one belief: access to capability should never depend on who you know, what you studied, or how much money you have.
+              Etomedia is an AI technology company building a portfolio of tools that democratise professional-level capability. We believe access to the best tools should never be a privilege.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Founder Story */}
+      {/* Brand Story */}
       <section className="py-24 bg-warm-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
-            {/* Pull quote / sidebar */}
+
+            {/* Sidebar */}
             <div className="lg:col-span-4">
-              <div className="sticky top-24">
+              <div className="sticky top-24 flex flex-col gap-6">
+                {/* Brand statement */}
                 <div className="bg-midnight rounded-2xl p-8">
                   <p className="text-gold text-4xl font-bold mb-1">"</p>
                   <p className="text-white text-lg font-medium leading-relaxed italic">
-                    The best tools, the most useful knowledge — they were locked behind expensive professionals and institutions that weren&apos;t built for everyone.
+                    The most valuable capabilities in the world — careers advice, financial planning, creative tools, research — should not be reserved for those who can afford them.
                   </p>
                   <p className="text-gold text-4xl font-bold text-right mt-1">"</p>
                   <div className="mt-6 pt-6 border-t border-slate-800">
-                    <p className="text-white font-semibold text-sm">Mike Etoedia</p>
-                    <p className="text-slate-500 text-xs mt-0.5">Founder, Etomedia</p>
+                    <p className="text-gold text-xs font-bold uppercase tracking-widest">The Etomedia Principle</p>
                   </div>
                 </div>
 
-                {/* Mission & Vision cards */}
-                <div className="mt-6 bg-white border border-slate-200 rounded-2xl p-6">
+                {/* Mission & Vision */}
+                <div className="bg-white border border-slate-200 rounded-2xl p-6">
                   <div className="mb-5">
                     <p className="text-xs font-bold uppercase tracking-widest text-gold mb-1.5">Mission</p>
                     <p className="text-slate-700 text-sm leading-relaxed">
@@ -92,64 +116,103 @@ export default function AboutPage() {
                     </p>
                   </div>
                 </div>
+
+                {/* Stats */}
+                <div className="bg-white border border-slate-200 rounded-2xl p-6 grid grid-cols-2 gap-4">
+                  {[
+                    { number: "8+", label: "AI Products" },
+                    { number: "4", label: "Pillars" },
+                    { number: "£2.99", label: "Entry Price" },
+                    { number: "1", label: "Mission" },
+                  ].map((s) => (
+                    <div key={s.label} className="text-center">
+                      <p className="text-2xl font-bold text-gold font-display">{s.number}</p>
+                      <p className="text-xs text-slate-500 mt-0.5 uppercase tracking-wider font-medium">{s.label}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
 
-            {/* Main story */}
+            {/* Main content */}
             <div className="lg:col-span-8">
-              <div className="prose prose-slate max-w-none">
-                <div className="text-slate-700 space-y-6 text-[1.0625rem] leading-[1.8]">
-                  <p>
-                    I grew up knowing I was capable of more — but for a long time, the tools to prove it weren&apos;t designed for people like me.
-                  </p>
-                  <p>
-                    I came to the UK from Nigeria and built a career in programme management, working alongside some of the country&apos;s largest organisations — government departments, public services, institutions of real scale. But wherever I went, I kept seeing the same pattern: the knowledge that actually moved people forward, the tools that changed outcomes — they were locked away.
-                  </p>
-                  <p>
-                    A professionally written CV. A personalised children&apos;s book. Language learning with native audio. The financial discipline of a trained advisor. Sermon research with genuine theological depth. None of these capabilities were inaccessible because they were too complex. They were inaccessible because the professionals who held them charged hundreds of pounds per hour.
-                  </p>
-                  <p className="text-midnight font-semibold text-xl leading-snug border-l-4 border-gold pl-6 py-1">
-                    That gap bothered me enough to start building.
-                  </p>
-                  <p>
-                    Etomedia began as an idea and became a portfolio. Eight AI-powered products, built across four pillars — children and family, career and professional, faith and community, productivity and finance. Each one designed to remove a gatekeeper. Each one built on the same conviction: that access to capability should not depend on how much money you have, who you know, or where you started.
-                  </p>
-                  <p>
-                    Lumi Stories gives a parent who has never written a book the ability to create a personalised, beautifully crafted bedtime story for their child. SylphCV scores a CV across ten criteria — exactly what a £200-an-hour careers coach does. LinguaKids delivers native-speaker audio and phonetics to children whose parents can&apos;t afford a private tutor. Keruxly gives every preacher the research depth of a trained theologian. The Finance Hub gives someone on a regular salary the financial planning structure of a professional advisor.
-                  </p>
-                  <p>
-                    I didn&apos;t have venture capital. I didn&apos;t have a team. I had an idea, a conviction, and the tools to build it — and I built it anyway.
-                  </p>
-                  <p>
-                    Etomedia is named after my family. It carries my name — Etoedia — and the word for the medium through which we reach people: digital products, content, technology. It is personal. It is intentional. And it is built to outlast me.
-                  </p>
-                  <p>
-                    This is for the parent who stayed up late writing a story their child will remember. For the professional who&apos;s been sending CVs into silence. For the preacher who prepares every week with nothing but time and faith. For the first-generation entrepreneur who&apos;s been building without a map.
-                  </p>
-                  <p className="text-midnight font-semibold">
-                    This is Etomedia. For the people who have always been overlooked.
-                  </p>
-                  <p className="text-slate-500 text-sm pt-2">— Mike Etoedia, Founder</p>
-                </div>
+              <div className="text-slate-700 space-y-6 text-[1.0625rem] leading-[1.8]">
+                <h2 className="text-3xl font-bold text-midnight mb-2">The Gap We&apos;re Closing</h2>
+
+                <p>
+                  For decades, the most valuable professional tools — career coaching, financial planning, language tutoring, creative writing, theological research — have been locked behind high fees, institutional access, and geographic barriers. The people who needed them most were often the ones least able to access them.
+                </p>
+                <p>
+                  AI changes that equation entirely. For the first time, it is possible to deliver professional-grade capability at a fraction of the traditional cost — and to do it at scale, on demand, for anyone.
+                </p>
+
+                <p className="text-midnight font-semibold text-xl leading-snug border-l-4 border-gold pl-6 py-1">
+                  Etomedia was built to capitalise on that opportunity — and to put that capability directly in people&apos;s hands.
+                </p>
+
+                <p>
+                  We build focused, intelligent tools across four pillars — children and family, career and professional, faith and community, and productivity and finance. Each product is built around a single question: what professional capability does this person need, and how do we give it to them simply, affordably, and reliably?
+                </p>
+
+                <h2 className="text-3xl font-bold text-midnight pt-4 mb-2">The Portfolio</h2>
+
+                <p>
+                  Lumi Stories gives any parent the ability to create a personalised, beautifully crafted children&apos;s story — the capability of a professional author, available in minutes. SylphCV analyses a CV across ten professional criteria, delivering the kind of detailed feedback that careers coaches charge hundreds of pounds per hour to provide. LinguaKids gives children access to native-speaker language learning with audio and phonetics, removing the need for expensive private tutors. Keruxly equips preachers with the research depth of a trained theologian, turning hours of preparation into minutes of intelligent, structured output.
+                </p>
+                <p>
+                  Alongside these flagship apps, the Etomedia productivity suite — the Finance Hub, Budget Tracker, Habit Tracker, and Meal Planner — brings the structure and discipline of professional advisors to anyone who needs it, at a price that makes it genuinely accessible.
+                </p>
+
+                <h2 className="text-3xl font-bold text-midnight pt-4 mb-2">Where We&apos;re Going</h2>
+
+                <p>
+                  The Etomedia ecosystem is growing. The Etomedia Pass — launching soon — will bring every product together under a single subscription, making the full suite of tools available for one monthly price. Future products will continue to follow the same principle: identify a professional capability that people need but cannot easily access, and build the most intelligent, simple, and affordable version of it.
+                </p>
+                <p>
+                  Every product we build is designed to outlast a single use — to become a tool people return to, recommend to others, and rely on as a permanent part of how they operate.
+                </p>
+
+                <p className="text-midnight font-semibold text-lg">
+                  This is Etomedia — professional capability, made accessible.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Values */}
+      {/* Pillars */}
       <section className="py-20 bg-midnight">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
+            <span className="section-label">What We Build</span>
+            <h2 className="text-4xl font-bold text-white">Four Pillars. One Purpose.</h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {pillars.map((p) => (
+              <div key={p.label} className="bg-slate-800/50 border border-slate-700/50 rounded-xl p-6">
+                <h3 className="text-gold font-bold text-base mb-1">{p.label}</h3>
+                <p className="text-slate-500 text-xs uppercase tracking-widest mb-3">{p.products}</p>
+                <p className="text-slate-300 text-sm leading-relaxed">{p.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Values */}
+      <section className="py-20 bg-warm-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-14">
             <span className="section-label">What We Stand For</span>
-            <h2 className="text-4xl font-bold text-white">Core Values</h2>
+            <h2 className="text-4xl font-bold text-midnight">Core Values</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {values.map((v) => (
-              <div key={v.title} className="bg-slate-800/50 border border-slate-700/50 rounded-xl p-6">
+              <div key={v.title} className="bg-white border border-slate-200 rounded-xl p-6">
                 <p className="text-gold text-2xl mb-4">{v.icon}</p>
-                <h3 className="text-white font-bold mb-2">{v.title}</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">{v.desc}</p>
+                <h3 className="text-midnight font-bold mb-2">{v.title}</h3>
+                <p className="text-slate-500 text-sm leading-relaxed">{v.desc}</p>
               </div>
             ))}
           </div>
@@ -157,10 +220,10 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-warm-white">
+      <section className="py-20 bg-midnight">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold text-midnight mb-4">Ready to explore the tools?</h2>
-          <p className="text-slate-500 text-lg mb-8 max-w-md mx-auto">
+          <h2 className="text-4xl font-bold text-white mb-4">Ready to explore the tools?</h2>
+          <p className="text-slate-400 text-lg mb-8 max-w-md mx-auto">
             Eight products. One mission. See what Etomedia can give you access to.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
